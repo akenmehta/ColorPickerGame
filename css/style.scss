@@ -1,0 +1,30 @@
+@import 'partials/setup';
+@import 'partials/header';
+
+body{
+	background-color: #000;
+}
+h1{
+	font-size: 40px;		
+}
+ul{
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 520px; 
+	border: 1px solid red;
+	margin: 50px auto;
+	padding: 0;
+}
+
+.color-boxes li{
+	width: 150px;
+	height: 150px;
+	background-color: #fff;
+	margin: 10px;
+	border-radius: 10px;
+}
+
+.header-spacing{
+	margin-right: 15px;
+}
