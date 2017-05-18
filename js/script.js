@@ -50,7 +50,7 @@ $(document).ready(function(){
 			});
 			colorList.push(boxColor);
 		}	
-		console.log(colorList);
+		// console.log(colorList);
 	}
 
 	//determines which color is the key out of the six random box colors
@@ -58,7 +58,7 @@ $(document).ready(function(){
 		colorKey = '';
 		colorKey = colorList[getRandomNumber(6)];
 		$('.winner-color').text(colorKey);
-		console.log(colorKey);
+		// console.log(colorKey);
 	}
 
 	//checks the color from the colorList array using the box text as the index to the colorKey
@@ -100,6 +100,7 @@ $(document).ready(function(){
 		// console.log(colorKey);
 	}
 	//Initial function calls
+	headerColors();
 	setInterval(headerColors, 1000);
 	setBoxColors();
 	winnerColor();

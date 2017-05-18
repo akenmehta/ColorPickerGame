@@ -1,30 +1,129 @@
 @import 'partials/setup';
-@import 'partials/header';
 
 body{
-	background-color: #000;
+	height: 100vh;
+	background-image: url(../assets/andrew-kow-169884.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	font-family: 'Abel';
+	font-size: 18px;
+	text-align: center;
+	color: #fff;
 }
 h1{
-	font-size: 40px;		
+	font-family: 'Indie Flower';
+	font-size: 60px;		
+	margin: 0;
+	margin-top: 10px;
+}
+h2{
+	margin: 10px;
+}
+h3{
+	margin: 5px;
+}
+.winner-color{
+	font-size: 30px;
+	font-weight: bold;
+	margin-right: 15px;
+}
+.color-format{
+	font-size: 20px;
+	margin: 10px;
+	label{
+		display: inline-block;
+		margin-right: 20px;
+	}
 }
 ul{
 	list-style-type: none;
 	display: flex;
 	flex-wrap: wrap;
-	max-width: 520px; 
+	max-width: 470px; 
 	border: 1px solid red;
-	margin: 50px auto;
+	margin: 20px auto;
 	padding: 0;
 }
 
 .color-boxes li{
-	width: 150px;
-	height: 150px;
-	background-color: #fff;
+	width: 135px;
+	height: 135px;
 	margin: 10px;
 	border-radius: 10px;
 }
 
 .header-spacing{
 	margin-right: 15px;
+}
+#reset{
+	border: none;
+	padding: 5px 30px;
+	font-weight: bold;
+	color: #fff;
+	background-color: #222;
+}
+
+@media (max-width: 870px) {
+	h1{
+		font-size: 45px;
+	}
+	h2{
+
+	}
+	h3{
+
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 660px) {
+	h1{
+		font-size: 40px;
+	}
+	h2, h3{
+		font-size: 20px;
+	}
+	.winner-color{
+		font-size: 22px;
+		margin-right: 10px;
+	}
+	ul{
+		max-width: 425px;
+	}
+	.color-boxes li{
+		width: 120px;
+		height: 120px;
+	}
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 590px) {
+	h1{
+		font-size: 30px;
+	}
+	.winner-color{
+		margin-right: 4px;
+	}
+	ul{
+		max-width: 425px;
+	}
+	.color-boxes li{
+		width: 120px;
+		height: 120px;
+	}
+	#reset{
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 590px) {
+	ul{
+		max-width: 245px;
+	}
+	.color-boxes li{
+		width: 100px;
+		height: 100px;
+	}
 }
