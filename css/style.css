@@ -146,6 +146,8 @@ h1 {
   font-size: 60px;
   margin: 0;
   margin-top: 10px; }
+  h1 div {
+    display: inline-block; }
 
 h2 {
   margin: 10px; }
@@ -174,7 +176,6 @@ ul {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   max-width: 470px;
-  border: 1px solid red;
   margin: 20px auto;
   padding: 0; }
 
